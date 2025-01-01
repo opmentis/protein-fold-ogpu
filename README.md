@@ -49,11 +49,6 @@ docker run \
 - Check CPU usage with `htop` or Task Manager
 - Consider reducing CPU cores if system becomes unresponsive:
 
-```bash
-export CPU_CORES=2  # Use only 2 cores
-python miner.py --wallet YOUR_WALLET_ADDRESS
-```
-
 ### Common Errors
 - "Database not found": Re-run installation script
 - "Out of memory": Increase available RAM or reduce CPU cores
