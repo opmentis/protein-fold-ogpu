@@ -42,6 +42,31 @@ docker run \
   miner
 ```
 
+### Withdraw $OPM tokens
+
+```python
+from opmentis import request_reward_payment, check_user_balance
+
+wallet_address = "wallet_address"
+labid = "dbc00e29-721f-40e6-b073-ec627db90115"
+
+
+# Request payment
+request_amount = 0
+print(request_reward_payment(labid, wallet_address, request_amount))
+
+# Check balance
+print(check_user_balance(labid, wallet_address))
+```
+## To withdraw your $OPM tokens, follow these steps:
+- ⁠Open the rewards.py file in the desci-lab folder, ensuring you have the OpMentis Python package installed.
+- ⁠Enter your wallet address registered to DeSci Lab in the wallet_address variable.
+- Input your desired withdrawal amount in the request_amount variable (cannot exceed your current balance).
+- ⁠Run the command python rewards.py
+- **Payment will be processed within 24 hours.
+- **Automated payment method coming in few weeks and mining on Web UI coming soon
+
+
 ## Troubleshooting
 
 ### Performance Issues
